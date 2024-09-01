@@ -3,7 +3,7 @@ grammar = "blueprint"
 path_suffixes = ["blp"]
 line_comments = ["// "]
 autoclose_before = ";:.,=)}]"
-tab_size = 4
+tab_size = 2
 brackets = [
     { start = "{", end = "}", close = true, newline = true },
     { start = "[", end = "]", close = true, newline = true },
