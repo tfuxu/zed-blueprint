@@ -3,11 +3,13 @@ use zed_extension_api::{self as zed, Command, Extension, LanguageServerId, Resul
 struct BlueprintExtension;
 
 impl BlueprintExtension {
-    fn lsp_path(&mut self, lsp_id: &LanguageServerId, worktree: &Worktree) -> Result<String> {
+    fn lsp_path(&mut self, _lsp_id: &LanguageServerId, worktree: &Worktree) -> Result<String> {
         if let Some(path) = worktree.which("blueprint-compiler") {
             return Ok(path);
         } else {
-            return Err(String::from("blueprint-compiler not found."));
+            return Err(String::from(
+                "blueprint-compiler not found. Make sure you have it installed on your host.",
+            ));
         }
 
         // TODO: Check if zed::latest_github_release can retrieve releases from gitlab, and if not, create a workaround
