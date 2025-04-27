@@ -1,0 +1,16 @@
+// This file is taken from vscode-blueprint project:
+// https://github.com/bodil/vscode-blueprint/blob/master/samples/welp.blp
+using Gtk 4.0;
+
+template MyAppWindow: ApplicationWindow {
+  [titlebar]
+  HeaderBar {}
+
+  [welp]
+  Button {}
+}
+
+Gtk.Dialog {
+  [action response=ok]
+  Gtk.Button ok_response {}
+}
