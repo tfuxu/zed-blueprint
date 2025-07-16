@@ -1,6 +1,6 @@
 id = "blueprint"
 name = "Blueprint"
-version = "0.3.0"
+version = "0.3.1"
 schema_version = 1
 authors = ["tfuxu <tfuxu@tutanota.com>"]
 description = "Language support for Blueprint (.blp) files"
@@ -8,7 +8,7 @@ repository = "https://github.com/tfuxu/zed-blueprint"
 
 [grammars.blueprint]
 repository = "https://github.com/smrtrfszm/tree-sitter-blueprint"
-commit = "b3a05548b37cf28bb901a2a3a07e7bfe6b299f73"
+commit = "d7548077ad2f2cb2288e9e5d5ecf24ac5b7921f4"
 
 [language_servers.blueprint]
 name = "Blueprint Language Server"

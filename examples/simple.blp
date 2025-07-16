@@ -2,7 +2,7 @@
 // https://github.com/bodil/vscode-blueprint/blob/master/samples/welp.blp
 using Gtk 4.0;
 
-template MyAppWindow: ApplicationWindow {
+template $MyAppWindow: ApplicationWindow {
   [titlebar]
   HeaderBar {}
 
@@ -11,6 +11,13 @@ template MyAppWindow: ApplicationWindow {
 }
 
 Gtk.Dialog {
+  [action response=cancel]
+  Gtk.Button cancel_response {
+    label: _("Cancel");
+  }
+
   [action response=ok]
-  Gtk.Button ok_response {}
+  Gtk.Button ok_response {
+    label: _("OK");
+  }
 }

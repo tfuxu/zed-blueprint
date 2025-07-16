@@ -1,0 +1,11 @@
+// Based on a test file from the `tree-sitter-blueprint` grammar:
+// https://github.com/smrtrfszm/tree-sitter-blueprint/blob/master/test/corpus/menu.txt#L270-L300
+using Gtk 4.0;
+
+// Inline menu
+Gtk.MenuButton {
+  menu-model: menu main_menu {};
+}
+
+// Menu with no ID set
+menu {}
