@@ -2,6 +2,7 @@
 // https://github.com/bodil/vscode-blueprint/blob/master/samples/window.blp
 using Gtk 4.0;
 using Adw 1;
+
 // A label, for argument's sake.
 Gtk.Label my_label {
   styles [
@@ -19,9 +20,11 @@ Gtk.Label my_label {
 
 Gtk.Button {
   label: "Click me pls";
+  // Missing `$` should give a warning about the old syntax used.
   clicked => on_button_clicked(my_label) swapped;
 }
 
+// This object should be marked by the LSP as deprecated.
 Gtk.ComboBoxText {
   // Comment here
   items [
@@ -31,6 +34,7 @@ Gtk.ComboBoxText {
   ]
 }
 
+// This object should be marked by the LSP as deprecated.
 Gtk.Dialog {
   [action response=ok]
   // Comment
@@ -38,6 +42,7 @@ Gtk.Dialog {
 }
 
 /* The top level application window. */
+// Missing `$` should give a warning about the old syntax used.
 template AppWindow: Adw.ApplicationWindow {
   default-width: 800;
   default-height: 600;
