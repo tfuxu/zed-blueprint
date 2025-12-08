@@ -10,3 +10,5 @@
 <img src="https://www.gnu.org/graphics/gplv3-with-text-136x68.png" alt="GPLv3 logo" align="right">
 This repository is licensed under the terms of the GNU GPLv3 license. You can find a copy of the license in the LICENSE file.
 </p>
+
+Some of the queries used in this extension [(see here)](https://github.com/tfuxu/zed-blueprint/tree/master/languages/blueprint) originate from the MIT-licensed [tree-sitter-blueprint](https://github.com/smrtrfszm/tree-sitter-blueprint) project.
