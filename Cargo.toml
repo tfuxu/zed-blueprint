@@ -1,7 +1,7 @@
 [package]
 name = "zed-blueprint"
 version = "0.3.1"
-edition = "2021"
+edition = "2024"
 
 [lib]
 path = "src/blueprint.rs"
