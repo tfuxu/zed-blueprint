@@ -1,5 +1,7 @@
 # Blueprint (.blp) support for Zed
 
+![Download in Zed](https://img.shields.io/badge/Download_in_Zed-red?logo=zedindustries&color=%23084CCF&link=zed%3A%2F%2Fextension%2Fblueprint)
+
 [Blueprint](https://gnome.pages.gitlab.gnome.org/blueprint-compiler/) language support for Zed editor.
 
 > [!WARNING]
