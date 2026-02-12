@@ -1,0 +1,11 @@
+// Based on a test file from the `tree-sitter-blueprint` grammar:
+// https://github.com/smrtrfszm/tree-sitter-blueprint/blob/master/test/corpus/extensions.txt#L228-L234
+using Gtk 4.0;
+
+LevelBar {
+  offsets [
+    offset ("low-class-name", 0.3),
+    offset ("medium-class-name", +0.5),
+    offset ("high-class-name", -0.7),
+  ]
+}
