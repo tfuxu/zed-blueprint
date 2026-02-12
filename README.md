@@ -1,6 +1,6 @@
 # Blueprint (.blp) support for Zed
 
-<a href="zed://extension/blueprint">
+<a href="https://zed.dev/extensions/blueprint">
   <img alt="Download in Zed" src="https://img.shields.io/badge/Download_in_Zed-red?logo=zedindustries&color=%23084CCF">
 </a>
 
