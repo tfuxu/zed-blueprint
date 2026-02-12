@@ -14,6 +14,7 @@
   (ext_file_filter_patterns)
   (ext_file_filter_suffixes)
   (ext_layout)
+  (ext_level_bar_offsets)
   (ext_scale_marks)
   (ext_scale_mark)
   (ext_size_group_widgets)
@@ -51,6 +52,8 @@
   "]" @indent.branch @indent.dedent)
 (ext_layout
   "}" @indent.branch @indent.dedent)
+(ext_level_bar_offsets
+  "]" @indent.branch @indent.dedent)
 (ext_scale_marks
   "]" @indent.branch @indent.dedent)
 (ext_scale_mark
