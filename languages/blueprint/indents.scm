@@ -5,6 +5,7 @@
   (menu_section)
   (menu_item)
   (menu_item_shorthand)
+  (try_expression)
   (ext_accessibility)
   (ext_adw_dialog)
   (ext_adw_breakpoint)
@@ -34,6 +35,8 @@
   "}" @indent.branch @indent.dedent)
 (menu_item_shorthand
   ")" @indent.branch @indent.dedent)
+(try_expression
+  "}" @indent.branch @indent.dedent)
 (ext_accessibility
   "}" @indent.branch @indent.dedent)
 (ext_adw_dialog
