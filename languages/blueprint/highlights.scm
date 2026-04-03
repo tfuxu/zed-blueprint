@@ -139,4 +139,5 @@
   "typeof"
   "offsets"
   "offset"
+  "try"
 ] @keyword
