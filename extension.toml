@@ -8,7 +8,7 @@ repository = "https://github.com/tfuxu/zed-blueprint"
 
 [grammars.blueprint]
 repository = "https://github.com/smrtrfszm/tree-sitter-blueprint"
-commit = "82e51db968f35205c406e00179282f9dc42cc0ee"
+commit = "f2b043912ffbfcf4e9e8d09709b86ab39a4b78ea"
 
 [language_servers.blueprint]
 name = "Blueprint Language Server"
