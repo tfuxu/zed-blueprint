@@ -21,49 +21,49 @@
   (ext_size_group_widgets)
   (ext_string_list_strings)
   (ext_styles)
-] @indent.begin
+] @indent
 
 (object_content
-  "}" @indent.branch @indent.dedent)
+  "}" @end) @indent
 (menu
-  "}" @indent.branch @indent.dedent)
+  "}" @end) @indent
 (menu_submenu
-  "}" @indent.branch @indent.dedent)
+  "}" @end) @indent
 (menu_section
-  "}" @indent.branch @indent.dedent)
+  "}" @end) @indent
 (menu_item
-  "}" @indent.branch @indent.dedent)
+  "}" @end) @indent
 (menu_item_shorthand
-  ")" @indent.branch @indent.dedent)
+  ")" @end) @indent
 (try_expression
-  "}" @indent.branch @indent.dedent)
+  "}" @end) @indent
 (ext_accessibility
-  "}" @indent.branch @indent.dedent)
+  "}" @end) @indent
 (ext_adw_dialog
-  "]" @indent.branch @indent.dedent)
+  "]" @end) @indent
 (ext_adw_breakpoint
-  "}" @indent.branch @indent.dedent)
+  "}" @end) @indent
 (ext_adw_breakpoint_condition
-  ")" @indent.branch @indent.dedent)
+  ")" @end) @indent
 (ext_combo_box_items
-  "]" @indent.branch @indent.dedent)
+  "]" @end) @indent
 (ext_file_filter_mime_types
-  "]" @indent.branch @indent.dedent)
+  "]" @end) @indent
 (ext_file_filter_patterns
-  "]" @indent.branch @indent.dedent)
+  "]" @end) @indent
 (ext_file_filter_suffixes
-  "]" @indent.branch @indent.dedent)
+  "]" @end) @indent
 (ext_layout
-  "}" @indent.branch @indent.dedent)
+  "}" @end) @indent
 (ext_level_bar_offsets
-  "]" @indent.branch @indent.dedent)
+  "]" @end) @indent
 (ext_scale_marks
-  "]" @indent.branch @indent.dedent)
+  "]" @end) @indent
 (ext_scale_mark
-  ")" @indent.branch @indent.dedent)
+  ")" @end) @indent
 (ext_size_group_widgets
-  "]" @indent.branch @indent.dedent)
+  "]" @end) @indent
 (ext_string_list_strings
-  "]" @indent.branch @indent.dedent)
+  "]" @end) @indent
 (ext_styles
-  "]" @indent.branch @indent.dedent)
+  "]" @end) @indent
