@@ -8,7 +8,7 @@ impl BlueprintExtension {
             return Ok(path);
         } else {
             return Err(String::from(
-                "blueprint-compiler not found. Make sure you have it installed on your host.",
+                "blueprint-compiler binary not found. Make sure you have it installed on your host or that you have set a custom binary path.",
             ));
         }
 
