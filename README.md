@@ -11,7 +11,21 @@
 [Blueprint](https://gnome.pages.gitlab.gnome.org/blueprint-compiler/) language support for Zed editor.
 
 > [!WARNING]
-> For the LSP features to work, `blueprint-compiler` must be installed on the system.
+> For the LSP features to work, `blueprint-compiler` must be installed on the system via package manager or by pointing to the custom binary path (see [Custom LSP binary](#custom-lsp-binary))
+
+## Custom LSP binary
+If you want to use a custom `blueprint-compiler` installation, you can specify `binary.path` and `binary.arguments` in `settings.json`:
+```json
+"lsp": {
+  "blueprint": {
+    "binary": {
+      "path": "/path/to/blueprint-compiler/blueprint-compiler.py",
+      "arguments": ["lsp"]
+    }
+  }
+}
+```
+The `path` has to be an absolute path, and `arguments` must be set to `lsp`.
 
 ## Development
 
