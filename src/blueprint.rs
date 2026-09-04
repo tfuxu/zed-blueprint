@@ -1,9 +1,13 @@
-use zed_extension_api::{self as zed, Command, Extension, LanguageServerId, Result, Worktree};
+use zed_extension_api::{self as zed, LanguageServerId, Result};
 
 struct BlueprintExtension;
 
 impl BlueprintExtension {
-    fn lsp_path(&mut self, _lsp_id: &LanguageServerId, worktree: &Worktree) -> Result<String> {
+    fn lsp_path(
+        &mut self,
+        _language_server_id: &LanguageServerId,
+        worktree: &zed::Worktree,
+    ) -> Result<String> {
         if let Some(path) = worktree.which("blueprint-compiler") {
             return Ok(path);
         } else {
@@ -16,7 +20,7 @@ impl BlueprintExtension {
     }
 }
 
-impl Extension for BlueprintExtension {
+impl zed::Extension for BlueprintExtension {
     fn new() -> Self {
         Self {}
     }
@@ -24,9 +28,9 @@ impl Extension for BlueprintExtension {
     fn language_server_command(
         &mut self,
         language_server_id: &LanguageServerId,
-        worktree: &Worktree,
-    ) -> Result<Command> {
-        Ok(Command {
+        worktree: &zed::Worktree,
+    ) -> Result<zed::Command> {
+        Ok(zed::Command {
             command: self.lsp_path(language_server_id, worktree)?,
             args: vec![String::from("lsp")],
             env: Default::default(),
